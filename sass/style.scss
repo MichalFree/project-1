@@ -1,0 +1,313 @@
+$font-main: 'Montserrat', sans-serif;
+$font-text: 'Roboto Slab', sans-serif;
+$font-italic: 'Source Serif Pro', sans-serif;
+
+$font-color-white: #fff;
+$font-color-light-grey: #a2a2a2;
+$font-color-gold: #fed136;
+$font-color-dark-grey: #222222;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 ;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: $font-main;
+    color: $font-color-dark-grey;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: $font-main;
+    font-size: 20px;
+    color: $font-color-dark-grey;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    font-family: $font-main;
+    font-size: 14px;
+    color: $font-color-dark-grey;
+}
+
+.section-subtitle {
+    font-family: $font-italic;
+    color: $font-color-light-grey;
+    font-size: 20px;
+    text-align: center;
+    line-height: 0em;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.navigation {
+    a {
+        text-decoration: none;
+        color: $font-color-white;
+        min-width: 100px;
+    }
+}
+
+.navigation {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+.navigation {
+    li {
+        display: inline-block;
+        margin-right: 25px;
+        position: relative;
+        font-family: $font-main;
+        text-transform: uppercase;
+    }
+}
+
+.navigation {
+    a:hover {
+        color: $font-color-gold;
+        }
+}
+
+.logo-navi {
+    display: flex;
+    flex: 50%;
+    margin: 0;
+    color: $font-color-gold;
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+/* Header */
+
+header {
+    background: url(https://i.postimg.cc/SK617fz4/1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* Splash */
+
+.splash {
+    flex: 1;
+    text-align: center;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-title {
+    font-family: $font-italic;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: $font-color-white;
+    font-weight: bold;
+    line-height: 0.7em;
+
+}
+
+.site-subtitle {
+    font-family: $font-main;
+    color: $font-color-white;
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.7em;
+
+}
+
+.btn {
+    width: 160px;
+    height: 60px;
+    margin: auto auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $font-color-white;
+    background: $font-color-gold;
+}
+
+.btn-one {
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+/* Services */
+
+.services {
+    padding: 80px 0;
+}
+
+.services i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border: 2px solid $font-color-gold;
+    border-radius: 50%;
+    color: $font-color-gold;
+    background: $font-color-white;
+    font-weight: bold;
+    text-align: center;
+    transition: all 1s;
+}
+
+.services i:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.services a {
+    text-decoration: none;
+}
+
+.services {
+    h3:hover {
+        color: $font-color-gold;
+        }
+}
+
+.card {
+    margin-top: 50px;
+    background: $font-color-white;
+}
+
+
+.card, .card-body {
+    text-align: center;
+}
+
+.card-description {
+    font-family: $font-italic;
+    font-size: 16px;
+    color: $font-color-light-grey;
+    text-transform: capitalize;
+    margin: 0px;
+    line-height: 1em;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background: #f7f7f7;
+    padding: 80px 0;
+}
+
+.card-description-portfolio {
+    font-family: $font-italic;
+    font-size: 16px;
+    color: $font-color-light-grey;
+    text-transform: capitalize;
+    margin: -20px;
+    line-height: 1em;
+}
+
+.portfolio {
+    img {
+        width: 100%;
+    }
+}
+
+.portfolio {
+    p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+/* Footer */
+
+.page-footer {
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.page-footer i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: $font-color-white;
+    background: $font-color-dark-grey;
+    text-align: center;
+    margin: 0 7px;
+}
+
+.page-footer {
+    i:hover {
+        color: $font-color-gold;
+        transform: scale(1.5, 1.5);
+        transition: all 1s;
+        }
+}
+
+.col-md-4 {
+    color: $font-color-dark-grey;
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+
+    .site-title {
+        line-height: 1em;
+
+    }
+
+    .site-subtitle {
+        line-height: 1em;
+
+    }
+
+    .navigation {
+        padding-top: 15px;
+    }
+
+    .navigation li {
+        display: block;
+       }
+}
